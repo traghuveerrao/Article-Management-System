@@ -83,6 +83,9 @@ function ArticleNew() {
       <Link to={`/article-list`}>
         <button>Back to your articles List</button>
       </Link>
+      <div className='propertyRights'>
+        <p>Property of Raghuveer</p>
+      </div>
     </div>
   );
 }

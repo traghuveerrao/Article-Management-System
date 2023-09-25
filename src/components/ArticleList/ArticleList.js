@@ -122,6 +122,9 @@ function ArticleList() {
           </tbody>
         </table>
       )}
+      <div className='propertyRights'>
+        <p>Property of Raghuveer</p>
+      </div>
     </div>
   );
 }

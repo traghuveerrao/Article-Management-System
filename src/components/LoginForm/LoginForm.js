@@ -88,6 +88,9 @@ function LoginForm() {
 
       {/* Display login error message */}
       {loginError && <ErrorPopup message="Please Enter Valid Login Details" onClose={() => setLoginError(null)} />}
+      <div className='propertyRights'>
+        <p>Property of Raghuveer</p>
+      </div>
     </div>
   );
 }

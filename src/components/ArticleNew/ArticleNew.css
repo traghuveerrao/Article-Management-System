@@ -34,3 +34,39 @@ form textarea {
 form label {
     font-family: 'Patua One', cursive;
 }
+
+@media screen and (max-width: 450px) {
+    .newArticleContainer {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .newArticleContainer {
+        max-width: 350px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .newArticleContainer {
+        max-width: 330px;
+    }
+    form label {
+        font-size: 15px;
+    }
+    form textarea {
+        width: 70%;
+    }
+    form input {
+        width: 50%;
+    }
+}
+
+.propertyRights {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+  }
+  .propertyRights p {
+    font-family: 'Fuggles', cursive;
+    font-size: 5px;
+  }

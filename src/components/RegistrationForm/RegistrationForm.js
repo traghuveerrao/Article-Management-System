@@ -71,6 +71,9 @@ function RegistrationForm() {
           <button>Login</button>
         </Link>
       </div>
+      <div className='propertyRights'>
+        <p>Property of Raghuveer</p>
+      </div>
     </div>
   );
 }
