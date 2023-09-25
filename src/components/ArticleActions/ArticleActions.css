@@ -8,11 +8,11 @@
     background-color: white;
     border: 1px solid black;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 400px; /* Adjust the maximum width as needed */
-    max-height: 60vh; /* Adjust the maximum height as needed */
+    max-height: 80vh; /* Adjust the maximum height as needed */
     width: 100%;
     padding: 20px;
     padding-top: 0;
@@ -55,3 +55,14 @@ form label {
     }
 
 } */
+
+.propertyRights {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+  }
+  .propertyRights p {
+    font-family: 'Fuggles', cursive;
+    font-size: 5px;
+  }

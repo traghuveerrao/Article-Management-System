@@ -97,6 +97,9 @@ function ArticleActions() {
           </Link>
         </div>
       </form>
+      <div className='propertyRights'>
+        <p>Property of Raghuveer</p>
+      </div>
     </div>
   );
 }
