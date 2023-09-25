@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import ArticleList from './components/ArticleList/ArticleList';
+import ArticleActions from './components/ArticleActions/ArticleActions';
+import ArticleNew from './components/ArticleNew/ArticleNew';
+import LoginForm from './components/LoginForm/LoginForm';
+import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+        <Route path="/*" element={<Navigate to="/login" />} />
+          <Route path="/register" element={<RegistrationForm />} />
+          <Route exact path="/login" element={<LoginForm />} />
+          <Route path="/article-detail/:id" element={<ArticleActions />} />
+          <Route path="/new" element={<ArticleNew />} />
+          <Route path="/article-list" element={<ArticleList />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

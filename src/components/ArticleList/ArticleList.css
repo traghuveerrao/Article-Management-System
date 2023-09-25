@@ -1,0 +1,303 @@
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    max-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+    box-sizing: border-box; 
+    border-radius: 30px;
+  }
+
+.top-bar {
+    display: flex;
+    /* border: 1px solid green; */
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.top-bar button {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.articleListHeader {
+    font-family: 'Tilt Prism', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.articleAddButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+/* .articleAddButton:hover {
+    -ms-transform-origin-z: scale(1.5);
+} */
+.articleAddButton button span {
+    font-size: 20px;
+    margin-right: 5px;
+    transform: scale(1.5);
+  }
+.articleAddButton button {
+    border: 1px solid black;
+    /* border-radius: 20px; */
+    padding: 10px 20px;
+    color: black;
+    box-shadow: 10px 5px 5px black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px; 
+    border: 4px double #000;
+  }
+  
+  th, td {
+    border: 1px double #000;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 8px;
+    background-color: #fff;
+    font-family: 'Mooli', sans-serif;
+    padding: 20px;
+  }
+  th {
+    font-family: 'Kanit', sans-serif;
+    border: 1px double #000;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+    
+
+/* DeleteConfirmation.css */
+
+/* Style the overlay background */
+.react-confirm-alert-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* Style the popup container */
+  /* .react-confirm-alert {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  } */
+  
+  /* Style the title */
+  .react-confirm-alert-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the message */
+  .react-confirm-alert-message {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the buttons container */
+  .react-confirm-alert-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Style the 'Yes' button */
+  .react-confirm-alert-button.yes-button {
+    /* background-color: #ff4444; */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the 'No' button */
+  .react-confirm-alert-button.no-button {
+    /* background-color: #444; */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  Hover effect for buttons
+  .react-confirm-alert-button.yes-button:hover,
+  .react-confirm-alert-button.no-button:hover {
+    opacity: 0.8; /* Reduce opacity on hover for a visual effect */
+  }
+
+.emptyArticleNotification {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  border: 4px double black;
+  padding: 5px;
+}
+
+@media screen and (max-width: 617px) {
+  .listContainer table{
+    max-width: 600px;
+  } 
+}
+@media screen and (max-width: 530px) {
+  .listContainer table{
+    width: 300px;
+  } 
+  table th {
+    font-size: 1rem; 
+  }
+  .top-bar button {
+    font-size: 1rem;;
+  }
+  .articleAddButton button {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .listContainer table{
+    width: 200px;
+  } 
+  table th {
+    font-size: 15px; 
+  }
+  table td {
+    font-size: 12px;
+  }
+  .top-bar button {
+    font-size: 15px;
+  }
+  .articleAddButton button {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .listContainer table{
+    width: 150px;
+  } 
+  table th {
+    font-size: 12px; 
+  }
+  table td {
+    font-size: 10px;
+  }
+  .top-bar button {
+    font-size: 15px;
+  }
+  .articleAddButton button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .listContainer table{
+    width: 100px;
+  } 
+  table th {
+    font-size: 10px; 
+  }
+  table td {
+    font-size: 10px;
+  }
+  .top-bar button {
+    font-size: 15px;
+  }
+  .articleAddButton button {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .listContainer table{
+    width: 70px;
+  } 
+  table th {
+    font-size: 8px; 
+  }
+  table td {
+    font-size: 8px;
+  }
+  .top-bar button {
+    font-size: 12px;
+  }
+  .articleAddButton button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 323px) {
+  .listContainer table{
+    width: 50px;
+  } 
+  table th {
+    font-size: 7px; 
+  }
+  table td {
+    font-size: 7px;
+  }
+  .top-bar button {
+    font-size: 12px;
+  }
+  .articleAddButton button {
+    font-size: 12px;
+  }
+}
+
+
+  
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 550px) {
+  .react-confirm-alert-body {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .react-confirm-alert-body {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .react-confirm-alert-body {
+    width: 200px;
+  }
+}
